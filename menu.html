@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Hamburguesas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4EBDC;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .catalogo {
+            text-align: center;
+ 	    color: #512314;
+	    
+        }
+
+        .catalogo-imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .hamburguesa {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: calc(25% - 20px); /* 4 columnas con un margen */
+            transition: transform 0.3s;
+        }
+
+        .hamburguesa:hover {
+            transform: scale(1.05); /* Aumenta ligeramente al pasar el ratón */
+        }
+
+        .hamburguesa img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .enlace-menu {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #512314;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            transition: background-color 0.3s;
+        }
+
+        .enlace-menu:hover {
+            background-color: #7A2B2A;
+        }
+
+        @media (max-width: 768px) {
+            .hamburguesa {
+                width: calc(50% - 20px); /* 2 columnas en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hamburguesa {
+                width: 100%; /* 1 columna en pantallas muy pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="catalogo">
+        <h1>Nuestro Catálogo de Hamburguesas</h1>
+        <div class="catalogo-imagenes">
+            <div class="hamburguesa">
+                <img src="img/img1.jpg" alt="">
+                <h2>Stacker</h2>
+                <p><strong>Ingredientes:</strong> Cuádruple carne la parrilla, queso americano, tocino, salsa Stacker.</p>
+                <p><strong>Precio:</strong> Bs. 70</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/img2.jpg" alt="">
+                <h2>Cuarto de Libra</h2>
+                <p><strong>Ingredientes:</strong> Doble carne de res a la parrilla, queso americano, cebollas, mostaza, ketchup y pepinillos.</p>
+                <p><strong>Precio:</strong> Bs. 60</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/img3.jpg" alt="">
+                <h2>Bacon Doble</h2>
+                <p><strong>Ingredientes:</strong> Doble carne de res a la parrilla, queso suizo, tocino.</p>
+                <p><strong>Precio:</strong> Bs. 60</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/imgn.jpg" alt="">
+                <h2>XT Steakhouse</h2>
+                <p><strong>Ingredientes:</strong> Carne de res a la parrilla, queso cheddar, lechuga, tomate, cebolla caramelizada.</p>
+                <p><strong>Precio:</strong> Bs. 50</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/img4.jpg" alt="">
+                <h2>Rodeo</h2>
+                <p><strong>Ingredientes:</strong> Carne de res a la parrilla, queso americano, aros de cebolla crujientes, salsa BBQ.</p>
+                <p><strong>Precio:</strong> Bs. 50</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/img5.jpg" alt="">
+                <h2>Big Smash</h2>
+                <p><strong>Ingredientes:</strong> Dos carnes de res a la parrilla, rebanada de queso americano, lechuga fresca, cebolla crujiente, pepinillos y salsa especial con tres rebanadas de pan suave con ajonjolí.</p>
+                <p><strong>Precio:</strong> Bs. 80</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/img6.jpg" alt="">
+                <h2>Napolitana</h2>
+                <p><strong>Ingredientes:</strong> Carne de res a la parrilla, queso americano, jamón, tomate fresco, pan con ajonjolí</p>
+                <p><strong>Precio:</strong> Bs. 60</p>
+            </div>
+            <div class="hamburguesa">
+                <img src="img/img7.jpg" alt="">
+                <h2>Crunchy Swiss</h2>
+                <p><strong>Ingredientes:</strong> Doble carne crunchy a la parilla, doble queso suizo, tocino.</p>
+                <p><strong>Precio:</strong> Bs. 60</p>
+            </div>
+        </div>
+        <a href="index.html" class="enlace-menu">Volver</a> 
+    </div>
+</body>
+</html>
